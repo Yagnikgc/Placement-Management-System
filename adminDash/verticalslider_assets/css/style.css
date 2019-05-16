@@ -1,0 +1,147 @@
+.vertical .carousel-inner {
+  
+  width: 100%;
+}
+.imgsz
+{
+    height: 500px;
+    width:400px;
+}
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+#team {
+  padding: 15px 0 180px;
+
+}
+#team .block {
+  position: relative;
+  overflow: hidden;
+  border:3px solid transparent;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+  box-shadow: 3px 3px 10px ;
+}
+.headTitle
+{
+	font-size: 17px;
+}
+img
+{
+  width: 100%;
+  height: 100%;
+}
+.normaltext
+{
+  font-size: 15px;
+}
+#team .block {
+  height: 350px;
+  width: 300px;
+
+}
+
+#team .block:hover {
+  border: 3px solid #29166f;
+
+}
+#team .block:hover .team-overlay {
+  bottom: 0;
+  opacity: 0.9;
+
+}
+#team .team-overlay {
+  background: rgba(255, 255, 255, 0.95);
+  
+
+  padding: 48px 12px;
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  
+  transition: 0.3s;
+}
+.col_blue
+{
+  color: #29166f;
+}
+.col_pink
+{
+  color: #e2a4c4;
+}
+#team .team-overlay h3,
+#team .team-overlay span {
+
+}
+#team .team-overlay  {
+  display: block;
+
+  padding-top: 10px;
+}
+#team .team-overlay .icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+  display: inline-block;
+  background: #29166f;
+}
+#team .team-overlay .icon i {
+  font-size: 30px;
+
+}
+#team .team-overlay {
+
+  line-height: 23px;
+
+}
+#team .team-overlay .media {
+  margin-top: 5px;
+}
+#team .team-overlay .media a {
+
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 10px;
+}

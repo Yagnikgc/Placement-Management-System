@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Mar, 2018, 9:55:25 AM
+    Author     : Maac
+*/
+.nav_year{
+    overflow: hidden;
+    margin-top: 10px;
+    float: right;
+}
+.nav_year a{
+    margin: 5px;
+    margin-top:10px; 
+    padding: 5px;
+    border: solid #d25b99 1px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.nav_year a:hover{
+    padding: 5px;
+    border: solid #29166f 1px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.prnt_btn{
+    float: right;
+    background-color: transparent;
+    border-color: #d25b99;
+    color: #4d4c4c;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    font-size: 20px;    
+}
+.float_left{
+    float: left;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+.hrsiz
+{
+    color: #4d4c4c;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.side_nav a{
+    margin: 5px;
+    padding: 5px;
+    border: solid #d25b99 1px;
+    border-radius: 10px;
+    font-size: 16px;     
+}
+.side_nav a:hover{
+    padding: 5px;
+    border: solid #29166f 1px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.pink_col
+{
+    color: #e2a4c4;
+}
+.dpink_col
+{
+    color: #d25b99;
+}
+.blue_col
+{
+    color: #29166f; 
+}
+.gray_col
+{
+    color: #4d4c4c; 
+}

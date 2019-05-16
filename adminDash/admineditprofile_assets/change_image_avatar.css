@@ -1,0 +1,29 @@
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 130px;
+    height: 140px;
+    overflow: hidden;
+    border: solid 1px;
+    box-shadow:2px 3px 4px #000000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#profile-container img {
+    width: 130px;
+    height: 140px;
+}

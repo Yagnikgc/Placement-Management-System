@@ -1,0 +1,129 @@
+.sight
+{
+	text-transform: uppercase;
+	color: black;
+	text-align: center;
+	padding: 33px 0px;
+}
+.black_col
+{
+	color: black;
+}
+.title{
+	letter-spacing: 3px;
+	font-size: 25px;
+	color: black;
+}
+.subtitle{
+	letter-spacing: 5px;
+	font-size: 12px;
+	color: black;
+}
+.pages{
+	text-align: center;
+	text-transform: uppercase;
+}
+.page-title{
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #444;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+.page-img{
+	width: 100%;
+	transition: all .4s ease-in-out;
+}
+.page-img:hover{
+	box-shadow: 0px 0px 20px #000;
+}
+footer{
+	text-align: center;
+	margin: 20px 0px 0px;
+}
+.copy{
+	
+	color: #999;
+	margin: 0px;
+	font-size: 14px;
+	color: black;
+}
+
+
+.fixed-plugin li > a,
+.fixed-plugin .badge{
+    transition: all .34s;
+    -webkit-transition: all .34s;
+    -moz-transition: all .34s;
+}
+.logout_button
+{
+  margin-right: 15px;
+}
+.fixed-plugin{
+    position: fixed;
+    top: 180px;
+    right: 0;
+    width: 64px;
+    background: rgba(0,0,0,.3);
+    z-index: 1031;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+    margin-top: 20%;
+}
+.fixed-plugin .fa-cog{
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    width: auto;
+}
+.fixed-plugin .dropdown-menu{
+    right: 80px;
+    left: auto;
+    width: 290px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.fixed-plugin .dropdown-menu:after, .fixed-plugin .dropdown-menu:before{
+    right: 10px;
+    margin-left: auto;
+    left: auto;
+}
+.fixed-plugin .fa-circle-thin{
+    color: #FFFFFF;
+}
+.fixed-plugin .active .fa-circle-thin{
+    color: #00bbff;
+}
+
+.fixed-plugin .dropdown-menu > .active > a,
+.fixed-plugin .dropdown-menu > .active > a:hover,
+.fixed-plugin .dropdown-menu > .active > a:focus{
+    color: #777777;
+    text-align: center;
+}
+@media (max-width: 992px){
+	.page-img{
+		margin-bottom: 50px;
+	}
+} 
+.pink_col
+{
+  color: #e2a4c4;
+}
+.dpink_col
+{
+  color: #d25b99;
+}
+.blue_col
+{
+  color: #29166f; 
+}
+.gray_col
+{
+  color: #4d4c4c; 
+}
+.red_col
+{
+	color: red;
+}

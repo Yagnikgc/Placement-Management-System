@@ -1,0 +1,790 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+:before, :after {
+  content: '';
+}
+
+*:focus {
+  outline: 0;
+}
+
+
+
+ul, li {
+  list-style: none;
+}
+
+.comment {
+  font-size: .8rem;
+  color: #999;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.options-wrapper {
+  position: relative;
+  white-space: nowrap;
+}
+
+span.options-wrapper {
+  display: inline-block;
+}
+
+.button-options {
+  position: relative;
+  display: block;
+}
+.button-options span {
+  margin-right: .2rem;
+}
+.button-options .more {
+  float: right;
+}
+
+.button-large {
+  padding: .5rem;
+  height: 2rem;
+}
+
+.button-small {
+  padding: .2rem;
+  height: 1.4rem;
+}
+
+.button-silver {
+  font-weight: bold;
+  border: solid 1px #BBB;
+  border-radius: .2rem;
+  background: #eeeeee;
+  color: #484848;
+}
+.button-silver:active {
+  border: solid 1px #3F90FE;
+}
+.button-silver:hover {
+  background: #f1f1f1;
+  box-shadow: 0 0 1px #484848;
+}
+
+.button-grey {
+  font-weight: bold;
+  background: #282828;
+  color: #BBB;
+  border-radius: .2rem;
+}
+.button-grey:hover {
+  color: #ffffff;
+  background: #484848;
+}
+
+.button-blue {
+  background: #3F90FE;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: .2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+}
+
+p.right {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.unread {
+  font-weight: bold;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #999;
+}
+input[type=text]:focus, textarea:focus {
+  box-shadow: inset 0 0 1px #00FFFF, inset 0 0 4px #999;
+}
+
+.input-small {
+  padding: .25rem;
+}
+
+.input-medium {
+  padding: .55rem;
+}
+
+.input-large {
+  padding: .8rem;
+}
+
+input.input-inline {
+  display: inline-block;
+  max-width: 10rem;
+  margin: 0 .2rem;
+}
+
+aside {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  margin-left: 0.6rem;
+  left: 0;
+  top: .8rem;
+  height: 100%;
+  width: 10.8rem;
+  z-index: 1;
+}
+aside .title {
+  height: 3.4rem;
+  line-height: 3.4rem;
+  padding-left: .4rem;
+  border-bottom: solid 1px #484848;
+}
+aside li {
+  cursor: pointer;
+}
+aside li:hover {
+  background: #282828;
+}
+
+button.mail-compose {
+  text-transform: uppercase;
+  width: 130px;
+  line-height: 2rem;
+  margin: .5rem .4rem;
+}
+
+.tab-content, .tabs {
+  position: absolute;
+  left: 0.6rem;
+  width: 10.8rem;
+}
+
+.mail-categories, .tab-content {
+  overflow: hidden;
+}
+.mail-categories:hover, .tab-content:hover {
+  overflow-y: auto;
+}
+
+.tabs {
+  bottom: 0;
+  height: 2rem;
+  border-top: solid 1px #484848;
+  text-align: center;
+}
+.tabs input[type='radio'] {
+  display: none;
+}
+.tabs input[type='radio']:checked + label button {
+  background: #282828;
+}
+.tabs label {
+  display: inline-block;
+  cursor: pointer;
+}
+.tabs button, .tabs button:hover {
+  background: transparent;
+}
+.tabs button {
+  display: block;
+  width: 2rem;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.mail-categories {
+  height: 13rem;
+  position: relative;
+}
+.mail-categories li {
+  padding: .1rem .4rem;
+  position: relative;
+}
+.mail-categories li.label:after {
+  width: .8rem;
+  height: .8rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -.4rem;
+  right: .3rem;
+}
+.mail-categories li.orange:after {
+  background: #FF4500;
+}
+.mail-categories li.green:after {
+  background: #3f3;
+}
+.mail-categories li.blue:after {
+  background: #3F90FE;
+}
+.mail-categories li.pink:after {
+  background: #FFC0CB;
+}
+
+.seperator {
+  border-top: solid 1px #484848;
+  height: 0.8rem;
+  cursor: row-resize;
+  position: relative;
+  z-index: 1;
+}
+.seperator:after {
+  width: 2px;
+  height: 2px;
+  background: #484848;
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  box-shadow: 4px 0 #484848, -4px 0 #484848;
+  opacity: 0;
+}
+.seperator:hover:after {
+  opacity: 1;
+}
+
+.tab-content {
+  top: 20.4rem;
+  bottom: 2rem;
+}
+
+.chatbox {
+  padding-left: .4rem;
+}
+
+.available, .busy, .offline, .talk {
+  display: inline-block;
+  width: .65rem;
+  height: .65rem;
+  border-radius: 50%;
+  margin-top: .3rem;
+  margin-right: .4rem;
+}
+
+.available {
+  background: linear-gradient(#3f3, #008000);
+}
+
+.busy {
+  background: linear-gradient(#DAA520, #FF4500);
+}
+
+.offline {
+  background: linear-gradient(#999, #484848);
+}
+
+.talk {
+  background: #ffffff;
+}
+
+.status-bar {
+  padding-bottom: .6rem;
+}
+.status-bar .status-change {
+  position: relative;
+  background: transparent;
+}
+.status-bar .status-change button {
+  display: block;
+  padding-right: .2rem;
+  width: 4.4rem;
+}
+.status-bar .status-change button:hover {
+  background: #484848;
+}
+.status-bar .profile-thumb {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.status-bar .left, .status-bar .right {
+  width: 2.2rem;
+  float: right;
+}
+.status-bar .left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 1px;
+}
+.status-bar .right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.contact-list {
+  margin-top: .3rem;
+  font-size: .9rem;
+}
+.contact-list li {
+  line-height: 1.4rem;
+  padding-left: .3rem;
+}
+
+.hideTabs ~ .mail-categories {
+  height: auto;
+  bottom: 2rem;
+}
+
+.hideTabs ~ .tab-content {
+  display: none;
+}
+
+main {
+  position: fixed;
+  left: 12.2rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-right: 2.2rem;
+  color: #999;
+  min-width: 37rem;
+  height: 100%;
+  z-index: 0;
+}
+main .mail-check + label {
+  background: #282828;
+  border: solid 1px #484848;
+  width: .8rem;
+  height: .8rem;
+  display: inline-block;
+}
+main .mail-check + label:before {
+  color: #282828;
+  content: '✔';
+  opacity: 0;
+  display: block;
+  margin-top: -.2rem;
+}
+main .mail-check + label:hover {
+  border: solid 1px #999;
+}
+main .mail-check:checked + label {
+  border: solid 1px darkCyan;
+  background: #999;
+}
+main .mail-check:checked + label:before {
+  opacity: 1;
+}
+
+.mail-search {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+.mail-search > button, .mail-search .input-box > input[type=text] {
+  height: 2.2rem;
+}
+.mail-search > .button-blue {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 4rem;
+}
+.mail-search > .more {
+  background: #ffffff;
+  color: #eeeeee;
+  padding: .5rem 0;
+  width: 1rem;
+}
+.mail-search > .more:hover {
+  color: #999;
+}
+.mail-search .input-box {
+  margin-right: 4rem;
+  padding-right: 1rem;
+  position: relative;
+  pointer-events: none;
+}
+.mail-search .input-box > input[type=text] {
+  box-shadow: none;
+  pointer-events: auto;
+}
+.mail-search .input-box .search-pref {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #999;
+  left: 0;
+  padding: .8rem;
+  box-shadow: 0 0 0 1px #999, 1px 1px 2px #999;
+}
+.mail-search .input-box .search-pref input[type=checkbox] {
+  display: inline;
+  margin-right: .4rem;
+}
+.mail-search .input-box .search-pref .options-wrapper button {
+  min-width: 6.2rem;
+}
+.mail-search .input-box .search-pref .button-blue {
+  width: 4.8rem;
+}
+
+.mail-menu {
+  border-top: solid 1px #484848;
+  padding: .5rem 0 .5rem 1rem;
+  margin-left: -1.2rem;
+}
+.mail-menu input[type=checkbox].partlyChecked + label:before {
+  content: '−';
+}
+.mail-menu > li {
+  display: inline-block;
+  margin-left: .8rem;
+}
+.mail-menu > li:first-of-type {
+  margin-left: 0;
+}
+.mail-menu button {
+  width: 5rem;
+}
+.mail-menu li > button {
+  display: block;
+}
+
+.mail-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 1rem;
+  top: 6.4rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mail-box .unread {
+  color: #ffffff;
+  background: #1b1b1b;
+}
+.mail-box table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.mail-box tr {
+  line-height: 1rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  border-bottom: solid 1px #484848;
+  padding-left: .4rem;
+}
+.mail-box tr:first-of-type {
+  border-top: solid 1px #484848;
+}
+.mail-box tr:hover .blank-cell:before {
+  opacity: 1;
+}
+.mail-box tr td {
+  height: 1rem;
+  line-height: 1rem;
+  padding: .4rem;
+  white-space: nowrap;
+}
+.mail-box tr label {
+  margin-right: .4rem;
+  display: inline-block;
+}
+.mail-box tr label:last-of-type {
+  margin-right: .6rem;
+}
+.mail-box tr .blank-cell {
+  min-width: .2rem;
+  max-width: .2rem;
+  padding: 0;
+  position: relative;
+}
+.mail-box tr .blank-cell:before {
+  height: 1.4rem;
+  width: 8px;
+  background: red;
+  background: -webkit-radial-gradient(#484848 1px, transparent 1px);
+  background: -moz-radial-gradient(#484848 1px, transparent 1px);
+  background: radial-gradient(#484848 1px, transparent 1px);
+  background-size: 4px 4px;
+  position: absolute;
+  left: 2px;
+  bottom: .2rem;
+  opacity: 0;
+}
+.mail-box tr .mail-star + label:before {
+  content: '☆';
+  color: #484848;
+}
+.mail-box tr .mail-star:checked + label:before {
+  content: '★';
+  color: #FFE300;
+  text-shadow: 1px 0 #DAA520, -1px 0 #DAA520, 0 1px #DAA520, 0 -1px #DAA520;
+}
+.mail-box tr .mail-important + label {
+  width: .7rem;
+  height: .7rem;
+  border: solid 1px #484848;
+  border-right: none;
+}
+.mail-box tr .mail-important + label:before {
+  width: 62%;
+  height: 62%;
+  border-top: 1px solid #484848;
+  border-right: 1px solid #484848;
+  background: inherit;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: translateX(0.41rem) translateY(0.1rem) rotate(35deg) skewY(30deg);
+  transform: translateX(0.41rem) translateY(0.1rem) rotate(35deg) skewY(30deg);
+  display: block;
+}
+.mail-box tr .mail-important + label:hover {
+  border: solid 1px #999;
+  border-right: none;
+}
+.mail-box tr .mail-important + label:hover:before {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+}
+.mail-box tr .mail-important:checked + label {
+  background: #FFE300;
+  border: solid 1px #DAA520;
+  border-right: none;
+}
+.mail-box tr .mail-important:checked + label:before {
+  border-top: 1px solid #DAA520;
+  border-right: 1px solid #DAA520;
+}
+.mail-box span {
+  display: inline-block;
+}
+.mail-box .mail-labels {
+  width: 3rem;
+}
+.mail-box .mail-sender {
+  width: 9rem;
+}
+.mail-box .mail-title {
+  width: auto;
+}
+.mail-box .mail-time {
+  text-align: right;
+  width: 5rem;
+  padding-right: .8rem;
+}
+
+.bottom-panel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  z-index: 201;
+  padding: 0 .4rem;
+  pointer-events: none;
+}
+
+.new-talk {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 17rem;
+  margin-left: .4rem;
+  pointer-events: auto;
+}
+.new-talk .chat-history {
+  height: 7rem;
+  margin: .4rem;
+  position: relative;
+}
+.new-talk .chat-history .expressions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  color: #3F90FE;
+  cursor: pointer;
+}
+.new-talk .chat-history textarea {
+  position: absolute;
+  bottom: 0;
+  padding: .2rem 1.4rem .2rem .4rem;
+}
+
+.new-mail {
+  width: 35rem;
+  height: 27rem;
+  display: inline-block;
+  margin-left: .4rem;
+  vertical-align: bottom;
+  position: relative;
+}
+.new-mail input:focus, .new-mail textarea:focus {
+  box-shadow: none;
+}
+.new-mail textarea {
+  padding: .6rem;
+  overflow-y: auto;
+  position: absolute;
+  top: 7.8rem;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+}
+.new-mail .footer {
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.popup-window {
+  background: #ffffff;
+  color: #282828;
+  position: relative;
+  z-index: 30;
+  text-align: left;
+  box-shadow: 0 0 3px #484848;
+  pointer-events: auto;
+}
+.popup-window .title {
+  height: 1.4rem;
+  padding: .6rem .8rem;
+  background: #282828;
+  color: #BBB;
+}
+.popup-window .menu {
+  padding: .4rem;
+  background: #eeeeee;
+  color: #999;
+}
+.popup-window .menu .button-silver {
+  border-radius: 0;
+  border: none;
+  color: #999;
+}
+.popup-window .menu .button-silver:hover {
+  box-shadow: 0 0 1px #484848;
+}
+.popup-window.minimized {
+  height: 2.6rem;
+  width: 17rem;
+}
+.popup-window.minimized .min-hide {
+  display: none;
+}
+.popup-window.fullscreen {
+  z-index: 0;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.profile-detail {
+  position: absolute;
+  width: 23rem;
+  box-shadow: 1px 1px 3px #999;
+  z-index: 300;
+}
+.profile-detail .content {
+  margin-right: 9rem;
+  padding: .8rem 0 .8rem 1rem;
+}
+.profile-detail .profile-img {
+  width: 6rem;
+  height: 6rem;
+  border: solid 5px #ffffff;
+  box-shadow: 1px 1px 3px #BBB;
+  margin: 1rem;
+  float: right;
+}
+.profile-detail .menu {
+  border-top: solid 1px #BBB;
+  clear: both;
+}
+.profile-detail .menu .button-silver {
+  font-weight: normal;
+}
+
+.dropdown-menu {
+  border: solid 1px #eeeeee;
+  padding: .4rem 0;
+  font-weight: normal;
+  text-align: left;
+  color: #282828;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  min-width: 10rem;
+  z-index: 22;
+}
+.dropdown-menu li {
+  padding: .1rem 1.8rem;
+  cursor: pointer;
+}
+.dropdown-menu li:hover {
+  background: #eeeeee;
+}
+.dropdown-menu li.subtitle {
+  padding-left: .8rem;
+}
+.dropdown-menu li.disable {
+  font-style: italic;
+  color: #999;
+}
+.dropdown-menu li.splitLine {
+  height: 1px;
+  margin-bottom: .2rem;
+  border-bottom: solid 1px #eeeeee;
+}
+.dropdown-menu .splitLine:hover, .dropdown-menu .subtitle:hover, .dropdown-menu .disable:hover {
+  background: inherit;
+}
+
+.dropdown-menu.drop-bottom {
+  top: 100%;
+}
+
+.dropdown-menu.drop-top {
+  top: auto;
+  bottom: 100%;
+}
+
+.dropdown-menu.temp-insert {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(150, 150, 150, 0.5);
+  z-index: 200;
+}

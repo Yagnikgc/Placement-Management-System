@@ -1,0 +1,121 @@
+#team {
+    padding: 15px 0 180px;
+}
+#team .block {
+    position: relative;
+    overflow: hidden;
+    border:3px solid transparent;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all;
+    box-shadow: 3px 3px 10px ;
+}
+.headTitle
+{
+    font-size: 17px;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+}
+.mediumtext
+{
+    font-size: 20px;
+}
+.normaltext
+{
+    font-size: 15px;
+}
+.bigtext{
+    width: 280px !important;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bigtext:hover{
+    overflow: visible;
+}
+#team .block {
+    height: 240px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+#team .block:hover {
+    border: 3px solid #4d4c4c;
+
+}
+#team .block:hover .team-overlay {
+    bottom: 0;
+    opacity: 0.9;
+
+}
+#team .team-overlay {
+    background: rgba(255, 255, 255, 0.95);
+    color: #fff;
+    padding: 48px 12px;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    transition: 0.3s;
+}
+.col_blue
+{
+    color: #29166f;
+}
+.col_pink
+{
+    color: #e2a4c4;
+}
+#team .team-overlay h3,
+#team .team-overlay span {
+    color: #333;
+}
+#team .team-overlay  {
+    display: block;
+    font-size: 18px;
+    padding-top: 10px;
+}
+#team .team-overlay .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-radius: 100%;
+    display: inline-block;
+    background: #29166f;
+}
+#team .team-overlay .icon i {
+    left: 110px;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+}
+#team .team-overlay {
+    font-size: 20px;
+    line-height: 23px;
+    color: #707a8a;
+}
+#team .team-overlay .media {
+    margin-top: 5px;
+}
+#team .team-overlay .media a {
+    font-size: 12px;
+    color: #fff;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+.icon_hov
+{
+    cursor: pointer;
+}

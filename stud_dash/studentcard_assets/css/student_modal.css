@@ -1,0 +1,39 @@
+.cls_back
+{
+    background-color: white;
+}
+.modal_max
+{
+    max-width: 1000px;
+}
+.btn
+{
+    outline: none;
+    color: #29166f;
+    border-radius: 5px;
+    border-color: #d25b99;
+}
+.white_col
+{
+    color: white;
+}
+.pink_col
+{
+    color: #e2a4c4;
+}
+.dpink_col
+{
+    color: #d25b99;
+}
+.blue_col
+{
+    color: #29166f; 
+}
+.gray_col
+{
+    color: #4d4c4c; 
+}
+.lgray_col
+{
+    color: #5e5e5e;
+}
